@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.Api", "FlatFinder.Api\FlatFinder.Api.csproj", "{9BA42CBF-99F8-401A-B1B5-852AB30A63AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.Core", "FlatFinder.Core\FlatFinder.Core.csproj", "{CC88424F-E981-453C-87E1-0DDCA3847C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.MvcClient", "FlatFinder.MvcClient\FlatFinder.MvcClient.csproj", "{FDCC715D-B998-4050-9A32-5B8AD00068F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BA42CBF-99F8-401A-B1B5-852AB30A63AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA42CBF-99F8-401A-B1B5-852AB30A63AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA42CBF-99F8-401A-B1B5-852AB30A63AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA42CBF-99F8-401A-B1B5-852AB30A63AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDCC715D-B998-4050-9A32-5B8AD00068F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDCC715D-B998-4050-9A32-5B8AD00068F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDCC715D-B998-4050-9A32-5B8AD00068F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDCC715D-B998-4050-9A32-5B8AD00068F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
