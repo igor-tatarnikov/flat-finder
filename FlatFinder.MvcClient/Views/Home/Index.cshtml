@@ -1,0 +1,59 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!-- <html lang="en"> -->
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width">
+    <title>Flat Finder</title>
+    
+    @Styles.Render("~/Content/css", "~/Content/less")
+
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="busyindicator"></div>
+    <header>
+        <h1>Flat Finder</h1>
+        <nav id="shellTop-view" class="main-nav">
+            <div class="accent-top" data-bind="text: currentUser().fullName"></div>
+            <div class="accent-left"></div>
+            <ul data-bind="with: menuHashes">
+                <li class="route-top"><a data-bind="attr: {href: favorites}">Ads List</a></li>
+                <li class="route-top"><a data-bind="attr: {href: sessions}">Add New</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="main">
+        @*@RenderPage("Views/favorites.cshtml")
+        @RenderPage("Views/speakers.cshtml")
+        @RenderPage("Views/sessions.cshtml")
+        @RenderPage("Views/session.cshtml")
+        @RenderPage("Views/speaker.cshtml")*@
+    </section>
+    
+    <!--
+    When bundling, load in this sequence:
+    1) shivs and jQuery
+    2) 3rd party libraries
+    3) require.js
+    4) your app libraries
+    5) main.js 
+    -->
+ 
+    @Scripts.Render(
+        "~/bundles/jquery", 
+        "~/bundles/jsextlibs", 
+        "~/Scripts/lib/require.js", 
+        "~/bundles/jsapplibs",
+        "~/Scripts/main.js"
+    )
+
+</body>
+</html>

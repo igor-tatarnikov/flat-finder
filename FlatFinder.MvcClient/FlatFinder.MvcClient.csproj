@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="dotless.Core">
+      <HintPath>..\packages\dotless.1.4.0.0\lib\dotless.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -121,97 +124,122 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\LessTransform.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\themes\base\images\animated-overlay.gif" />
-    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="Content\themes\base\jquery-ui.css" />
-    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
-    <Content Include="Content\themes\base\jquery.ui.all.css" />
-    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
-    <Content Include="Content\themes\base\jquery.ui.base.css" />
-    <Content Include="Content\themes\base\jquery.ui.button.css" />
-    <Content Include="Content\themes\base\jquery.ui.core.css" />
-    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
-    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
-    <Content Include="Content\themes\base\jquery.ui.menu.css" />
-    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
-    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
-    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
-    <Content Include="Content\themes\base\jquery.ui.slider.css" />
-    <Content Include="Content\themes\base\jquery.ui.spinner.css" />
-    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
-    <Content Include="Content\themes\base\jquery.ui.theme.css" />
-    <Content Include="Content\themes\base\jquery.ui.tooltip.css" />
-    <Content Include="Content\themes\base\minified\images\animated-overlay.gif" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.menu.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.spinner.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Content\boilerplate-styles.css" />
+    <Content Include="Content\images\archive\back.png" />
+    <Content Include="Content\images\archive\blue-bookmark.png" />
+    <Content Include="Content\images\archive\blue-bookmarkchecked.png" />
+    <Content Include="Content\images\archive\blue-bookmarklocked.png" />
+    <Content Include="Content\images\archive\cancel.png" />
+    <Content Include="Content\images\archive\checkbox-checked-black.png" />
+    <Content Include="Content\images\archive\checkbox-checked-white.png" />
+    <Content Include="Content\images\archive\checkbox-unchecked-black.png" />
+    <Content Include="Content\images\archive\checkbox-unchecked-white.png" />
+    <Content Include="Content\images\archive\clear.png" />
+    <Content Include="Content\images\archive\heart-black.png" />
+    <Content Include="Content\images\archive\heart-checked.png" />
+    <Content Include="Content\images\archive\heart-locked-black.png" />
+    <Content Include="Content\images\archive\heart-locked-white.png" />
+    <Content Include="Content\images\archive\heart-white.png" />
+    <Content Include="Content\images\archive\icon-blue.png" />
+    <Content Include="Content\images\archive\icon-light-blue.png" />
+    <Content Include="Content\images\archive\icon.png" />
+    <Content Include="Content\images\archive\invalid.png" />
+    <Content Include="Content\images\archive\refresh.png" />
+    <Content Include="Content\images\archive\save.png" />
+    <Content Include="Content\images\archive\search.png" />
+    <Content Include="Content\images\archive\star-empty.png" />
+    <Content Include="Content\images\archive\star-full-dark.png" />
+    <Content Include="Content\images\archive\star-full-light.png" />
+    <Content Include="Content\images\archive\trash.png" />
+    <Content Include="Content\images\archive\valid.png" />
+    <Content Include="Content\images\archive\val_asterisk.png" />
+    <Content Include="Content\images\back.png" />
+    <Content Include="Content\images\cancel.png" />
+    <Content Include="Content\images\checkbox-checked-black.png" />
+    <Content Include="Content\images\checkbox-checked-white.png" />
+    <Content Include="Content\images\checkbox-unchecked-black.png" />
+    <Content Include="Content\images\checkbox-unchecked-white.png" />
+    <Content Include="Content\images\clear.png" />
+    <Content Include="Content\images\heart-black.png" />
+    <Content Include="Content\images\heart-checked.png" />
+    <Content Include="Content\images\heart-locked-black.png" />
+    <Content Include="Content\images\heart-locked-white.png" />
+    <Content Include="Content\images\heart-white.png" />
+    <Content Include="Content\images\icon-blue.png" />
+    <Content Include="Content\images\icon-light-blue.png" />
+    <Content Include="Content\images\invalid.png" />
+    <Content Include="Content\images\refresh.png" />
+    <Content Include="Content\images\save.png" />
+    <Content Include="Content\images\search.png" />
+    <Content Include="Content\images\star-empty.png" />
+    <Content Include="Content\images\star-full-dark.png" />
+    <Content Include="Content\images\star-full-light.png" />
+    <Content Include="Content\images\trash.png" />
+    <Content Include="Content\images\valid.png" />
+    <Content Include="Content\images\val_asterisk.png" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <None Include="Scripts\frameworks\jquery-2.1.1.intellisense.js" />
-    <Content Include="Scripts\frameworks\jquery-2.1.1.js" />
-    <Content Include="Scripts\frameworks\jquery-2.1.1.min.js" />
-    <Content Include="Scripts\frameworks\jquery-2.1.1.min.map" />
-    <Content Include="Scripts\frameworks\jquery-ui-1.10.4.js" />
-    <Content Include="Scripts\frameworks\jquery-ui-1.10.4.min.js" />
-    <Content Include="Scripts\frameworks\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\frameworks\jquery.unobtrusive-ajax.min.js" />
-    <None Include="Scripts\frameworks\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\frameworks\jquery.validate.js" />
-    <Content Include="Scripts\frameworks\jquery.validate.min.js" />
-    <Content Include="Scripts\frameworks\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\frameworks\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\frameworks\knockout-3.1.0.debug.js" />
-    <Content Include="Scripts\frameworks\knockout-3.1.0.js" />
-    <Content Include="Scripts\frameworks\modernizr-2.5.3.js" />
-    <Content Include="Scripts\frameworks\r.js" />
-    <Content Include="Scripts\frameworks\require.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
+    <Content Include="Content\styles.less" />
+    <None Include="Scripts\lib\jquery-2.1.1.intellisense.js" />
+    <None Include="Scripts\lib\amplify-vsdoc.js" />
+    <Content Include="Scripts\app\bootstrapper.js" />
+    <Content Include="Scripts\app\config.js" />
+    <Content Include="Scripts\app\dataContext.js" />
+    <Content Include="Scripts\app\dataLoader.js" />
+    <Content Include="Scripts\app\dataService.flatAd.js" />
+    <Content Include="Scripts\app\dataService.js" />
+    <Content Include="Scripts\app\model.flatAd.js" />
+    <Content Include="Scripts\app\model.js" />
+    <Content Include="Scripts\app\model.mapper.js" />
+    <Content Include="Scripts\lib\activity-indicator.js" />
+    <Content Include="Scripts\lib\amplify.js" />
+    <Content Include="Scripts\lib\amplify.min.js" />
+    <Content Include="Scripts\lib\amplify\amplify.core.js" />
+    <Content Include="Scripts\lib\amplify\amplify.core.min.js" />
+    <Content Include="Scripts\lib\amplify\amplify.request.js" />
+    <Content Include="Scripts\lib\amplify\amplify.request.min.js" />
+    <Content Include="Scripts\lib\amplify\amplify.store.js" />
+    <Content Include="Scripts\lib\amplify\amplify.store.min.js" />
+    <Content Include="Scripts\lib\GPL-LICENSE.txt" />
+    <Content Include="Scripts\lib\knockout.activity.js" />
+    <Content Include="Scripts\lib\knockout.command.js" />
+    <Content Include="Scripts\lib\knockout.dirtyFlag.js" />
+    <Content Include="Scripts\lib\knockout.validation.debug.js" />
+    <Content Include="Scripts\lib\knockout.validation.js" />
+    <Content Include="Scripts\lib\jquery-2.1.1.js" />
+    <Content Include="Scripts\lib\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\lib\jquery-2.1.1.min.map" />
+    <Content Include="Scripts\lib\jquery-ui-1.10.4.js" />
+    <Content Include="Scripts\lib\jquery-ui-1.10.4.min.js" />
+    <Content Include="Scripts\lib\knockout-3.1.0.debug.js" />
+    <Content Include="Scripts\lib\knockout-3.1.0.js" />
+    <Content Include="Scripts\lib\modernizr-2.5.3.js" />
+    <Content Include="Scripts\lib\r.js" />
+    <Content Include="Scripts\lib\require.js" />
+    <Content Include="Scripts\lib\_references.js" />
+    <Content Include="Scripts\lib\moment-with-langs.js" />
+    <Content Include="Scripts\lib\moment-with-langs.min.js" />
+    <Content Include="Scripts\lib\moment.js" />
+    <Content Include="Scripts\lib\moment.min.js" />
+    <Content Include="Scripts\lib\sammy-0.7.4.js" />
+    <Content Include="Scripts\lib\sammy-0.7.4.min.js" />
+    <Content Include="Scripts\lib\toastr.js" />
+    <Content Include="Scripts\lib\toastr.min.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -223,14 +251,21 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\lib\toastr.min.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlatFinder.Core\FlatFinder.Core.csproj">
+      <Project>{cc88424f-e981-453c-87e1-0ddca3847c68}</Project>
+      <Name>FlatFinder.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

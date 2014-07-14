@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 
 namespace FlatFinder.Api
 {
@@ -10,9 +7,20 @@ namespace FlatFinder.Api
         public static void Register(HttpConfiguration config)
         {
             config.Routes.MapHttpRoute(
-                name: "DefaultApi",
+                name: "ControllerOnly",
+                routeTemplate: "api/{controller}"
+            );
+
+            config.Routes.MapHttpRoute(
+                name: "ControllerAndId",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: null,
+                constraints: new { id = @"^\d+$" } // all digits
+            );
+
+            config.Routes.MapHttpRoute(
+                name: "ControllerAction",
+                routeTemplate: "api/{controller}/{action}"
             );
         }
     }
