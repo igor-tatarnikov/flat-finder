@@ -40,14 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\Config.cs" />
-    <Compile Include="Configuration\ConfigurationHelpers.cs" />
     <Compile Include="Domain\Ad\Address.cs" />
+    <Compile Include="Domain\Ad\City.cs" />
     <Compile Include="Domain\Ad\DetailedFlatAd.cs" />
     <Compile Include="Domain\Ad\District.cs" />
     <Compile Include="Domain\Ad\FlatAd.cs" />
     <Compile Include="Domain\Ad\FlatInfo.cs" />
     <Compile Include="Domain\BaseEntity.cs" />
+    <Compile Include="Domain\BaseEntityAuditDate.cs" />
+    <Compile Include="Domain\BaseEntitySoftDelete.cs" />
     <Compile Include="Domain\User\ContactInfo.cs" />
     <Compile Include="Domain\IBaseEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

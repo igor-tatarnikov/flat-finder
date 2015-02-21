@@ -1,17 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.Api", "FlatFinder.Api\FlatFinder.Api.csproj", "{9BA42CBF-99F8-401A-B1B5-852AB30A63AF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.Core", "FlatFinder.Core\FlatFinder.Core.csproj", "{CC88424F-E981-453C-87E1-0DDCA3847C68}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.MvcClient", "FlatFinder.MvcClient\FlatFinder.MvcClient.csproj", "{FDCC715D-B998-4050-9A32-5B8AD00068F9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.Data", "FlatFinder.Data\FlatFinder.Data.csproj", "{2AD04413-8723-4FF7-AD08-7429A9871D54}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.Contracts", "FlatFinder.Contracts\FlatFinder.Contracts.csproj", "{1270F89C-9CA0-490B-8E58-8D63EAFE1CC9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.Init", "FlatFinder.Init\FlatFinder.Init.csproj", "{5EFAC8B3-FAD0-4765-AD80-A2E43B2DBD14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,30 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9BA42CBF-99F8-401A-B1B5-852AB30A63AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9BA42CBF-99F8-401A-B1B5-852AB30A63AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9BA42CBF-99F8-401A-B1B5-852AB30A63AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9BA42CBF-99F8-401A-B1B5-852AB30A63AF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FDCC715D-B998-4050-9A32-5B8AD00068F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FDCC715D-B998-4050-9A32-5B8AD00068F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FDCC715D-B998-4050-9A32-5B8AD00068F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FDCC715D-B998-4050-9A32-5B8AD00068F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2AD04413-8723-4FF7-AD08-7429A9871D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AD04413-8723-4FF7-AD08-7429A9871D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AD04413-8723-4FF7-AD08-7429A9871D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AD04413-8723-4FF7-AD08-7429A9871D54}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1270F89C-9CA0-490B-8E58-8D63EAFE1CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1270F89C-9CA0-490B-8E58-8D63EAFE1CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1270F89C-9CA0-490B-8E58-8D63EAFE1CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1270F89C-9CA0-490B-8E58-8D63EAFE1CC9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5EFAC8B3-FAD0-4765-AD80-A2E43B2DBD14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5EFAC8B3-FAD0-4765-AD80-A2E43B2DBD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5EFAC8B3-FAD0-4765-AD80-A2E43B2DBD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5EFAC8B3-FAD0-4765-AD80-A2E43B2DBD14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

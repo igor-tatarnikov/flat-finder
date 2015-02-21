@@ -1,6 +1,6 @@
 ﻿namespace FlatFinder.Core.Domain.Ad
 {
-    public class Address: BaseEntity
+    public class Address : BaseEntitySoftDelete
     {
         public string City { get; set; }
         public string Street { get; set; }

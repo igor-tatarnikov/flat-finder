@@ -1,6 +1,6 @@
 ﻿namespace FlatFinder.Core.Domain.Ad
 {
-    public class FlatInfo: BaseEntity
+    public class FlatInfo : BaseEntitySoftDelete
     {
         public string Description { get; set; }
         public int? AddressId { get; set; }

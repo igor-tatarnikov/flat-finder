@@ -1,6 +1,6 @@
 ﻿namespace FlatFinder.Core.Domain.User
 {
-    public class ContactInfo: BaseEntity
+    public class ContactInfo : BaseEntitySoftDelete
     {
         public int UserId { get; set; }
         public string Email { get; set; }
