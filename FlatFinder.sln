@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.Core", "FlatFinder.Core\FlatFinder.Core.csproj", "{CC88424F-E981-453C-87E1-0DDCA3847C68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFinder.Data", "FlatFinder.Data\FlatFinder.Data.csproj", "{C02C1479-A34F-41C0-9EA3-28EE3D2101F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC88424F-E981-453C-87E1-0DDCA3847C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C02C1479-A34F-41C0-9EA3-28EE3D2101F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02C1479-A34F-41C0-9EA3-28EE3D2101F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02C1479-A34F-41C0-9EA3-28EE3D2101F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02C1479-A34F-41C0-9EA3-28EE3D2101F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
